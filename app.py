@@ -230,7 +230,8 @@ def detect_issues_route():
 
 @app.route('/remove_columns', methods=['POST'])
 def remove_columns():
-    
+    client_ip = request.remote_addr
+    print(f"Request received from IP: {client_ip}")
     try:
         data = request.json.get('data')
         columns = request.json.get('columns')
