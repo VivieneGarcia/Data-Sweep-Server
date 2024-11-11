@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, send_file
 import pandas as pd
 import io
 from datetime import datetime
+import traceback
 
 app = Flask(__name__)
 
