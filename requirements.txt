@@ -5,3 +5,4 @@ numpy
 seaborn
 scipy
 scikit-learn
+gunicorn
