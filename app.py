@@ -16,7 +16,9 @@ import statistics
 
 app = Flask(__name__)
 
-
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({"status": "Server is live"}), 200
 
 def to_title_case(string):
     return ' '.join([word.capitalize() if len(word) > 1 else word.upper() for word in string.split(' ')])
